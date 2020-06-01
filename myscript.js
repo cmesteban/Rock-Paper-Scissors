@@ -40,12 +40,14 @@ function game(){
             //Display Final Result
             if(playerScore==3 || computerScore==3){
                 if(playerScore>computerScore){
-                    roundFirst.textContent = 'YOU BEAT THE COMPUTER!';
-                    roundSecond.textContent = `You: ${playerScore} vs CPU: ${computerScore}`;
+                    roundFirst.textContent = '';
+                    roundSecond.textContent = '';
+                    liveScore.textContent = 'YOU WON!';
 
                 }else{
-                    roundFirst.textContent = 'YOU LOST TO THE COMPUTER :(';
-                    roundSecond.textContent = `You: ${playerScore} vs CPU: ${computerScore}`;
+                    roundFirst.textContent = '';
+                    roundSecond.textContent = '';
+                    liveScore.textContent='YOU LOST!';
                 }
             
 
