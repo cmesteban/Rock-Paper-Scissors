@@ -1,4 +1,4 @@
-
+game();
 function game(){
     //Variables for the DOM
     const playerChoice = document.querySelectorAll('.playerWeapons');
@@ -21,7 +21,7 @@ function game(){
 
             //trigger the animation for player
             animationPlayer(e.srcElement.id);
-            animationCPU(`cpu${cpuPick}`);
+            animationCPU(`CPU${cpuPick}`);
 
             //display the round number and round result
             roundFirst.textContent = `Round ${roundCount++}`;
@@ -72,7 +72,7 @@ function playRound(playerSelection, computerSelection){
     let result = null;
 
     if(playerSelection==computerSelection){
-        result = `You both playes ${computerSelection} <br> It's a Draw!`;
+        result = `You both played ${computerSelection} <br> It's a Draw!`;
     }else if((playerSelection == "Paper" && computerSelection == "Rock") ||
     (playerSelection == "Rock" && computerSelection == "Scissors") ||
     (playerSelection == "Scissors" && computerSelection == "Paper")){
@@ -93,7 +93,7 @@ function animationPlayer(imageID){
 }
 
 //computer image animation
-function animationPlayer(imageID){
+function animationCPU(imageID){
     const imageToAnimate = document.getElementById(`${imageID}`);
     imageToAnimate.classList.add('computerImgAnimation');
     imageToAnimate.addEventListener("animationend", function(){
