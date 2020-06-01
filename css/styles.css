@@ -96,3 +96,13 @@ h1{
 #roundContent{
     margin-bottom: var(--margin-bottom-img);
 }
+
+#scoreDisplay{
+   font-weight: bold;
+   font-size: 40px;
+   text-shadow: 0 0 3px rgb(12, 12, 8), 0 0 10px rgba(255, 0, 200, 0.822);  
+}
+
+#roundContent{
+    text-shadow: 0 0 10px rgb(12, 12, 8), 0 0 5px rgba(255, 0, 200, 0.822); 
+}
