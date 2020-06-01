@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+body{
+    font-family: Permanent Marker, sans-serif;
+    background-color: #B4A0E5;
+    color: #CAFFD0
+}
+
+h1{
+    text-align: center;
+    font-size: 50px;
+}
+
+#playFields{
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+    margin-top: 50px;
+}
+
+#PlayerOptions{
+  display: flex;
+  flex-direction: column;
+  margin-left: 100px;
+}
+
+#playerRock{
+    height: auto;
+    width: auto;
+    max-width: 250px;
+    max-height: 250px;
+    margin-bottom: 30px;
+}
+
+#playerPaper{
+    height: auto;
+    width: auto;
+    max-width: 250px;
+    max-height: 250px;
+    margin-bottom: 30px;
+}
+
+#playerScissors{
+    height: auto;
+    width: auto;
+    max-width: 250px;
+    max-height: 250px;
+    margin-bottom: 30px;
+}
+
+#CPUOptions{
+    display: flex;
+    flex-direction: column;
+    margin-right: 100px;;
+}
+
+#CPURock{
+    height: auto;
+    width: auto;
+    max-width: 250px;
+    max-height: 250px;
+    margin-bottom: 30px;
+}
+
+#CPUPaper{
+    height: auto;
+    width: auto;
+    max-width: 250px;
+    max-height: 250px;
+    margin-bottom: 30px;
+}
+
+#CPUScissors{
+    height: auto;
+    width: auto;
+    max-width: 250px;
+    max-height: 250px;
+    margin-bottom: 30px;
+}
