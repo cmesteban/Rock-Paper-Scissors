@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 
+:root{
+    --size-of-images: 200px;
+    --margin-bottom-img: 50px;
+}
+
 body{
     font-family: Permanent Marker, sans-serif;
     background-color: #B4A0E5;
@@ -7,8 +12,11 @@ body{
 }
 
 h1{
+    margin-top: 20px;
     text-align: center;
     font-size: 50px;
+    background-color: #1E1014;
+    color: #CA3CFF;
 }
 
 #playFields{
@@ -27,25 +35,25 @@ h1{
 #playerRock{
     height: auto;
     width: auto;
-    max-width: 250px;
-    max-height: 250px;
-    margin-bottom: 30px;
+    max-width: var(--size-of-images);
+    max-height: var(--size-of-images);
+    margin-bottom: var(--margin-bottom-img);
 }
 
 #playerPaper{
     height: auto;
     width: auto;
-    max-width: 250px;
-    max-height: 250px;
-    margin-bottom: 30px;
+    max-width: var(--size-of-images);
+    max-height: var(--size-of-images);
+    margin-bottom: var(--margin-bottom-img);
 }
 
 #playerScissors{
     height: auto;
     width: auto;
-    max-width: 250px;
-    max-height: 250px;
-    margin-bottom: 30px;
+    max-width: var(--size-of-images);
+    max-height: var(--size-of-images);
+    margin-bottom: var(--margin-bottom-img);
 }
 
 #CPUOptions{
@@ -57,23 +65,34 @@ h1{
 #CPURock{
     height: auto;
     width: auto;
-    max-width: 250px;
-    max-height: 250px;
-    margin-bottom: 30px;
+    max-width: var(--size-of-images);
+    max-height: var(--size-of-images);
+    margin-bottom: var(--margin-bottom-img);
 }
 
 #CPUPaper{
     height: auto;
     width: auto;
-    max-width: 250px;
-    max-height: 250px;
-    margin-bottom: 30px;
+    max-width: var(--size-of-images);
+    max-height: var(--size-of-images);
+    margin-bottom: var(--margin-bottom-img);
 }
 
 #CPUScissors{
     height: auto;
     width: auto;
-    max-width: 250px;
-    max-height: 250px;
-    margin-bottom: 30px;
+    max-width: var(--size-of-images);
+    max-height: var(--size-of-images);
+    margin-bottom: var(--margin-bottom-img);
+}
+
+#centerInfo{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+   
+}
+
+#roundContent{
+    margin-bottom: var(--margin-bottom-img);
 }
