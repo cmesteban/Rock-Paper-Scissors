@@ -19,11 +19,18 @@ h1{
     color: #CA3CFF;
 }
 
-p{
+.playerText, .cpuText{
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     font-size: 20px;
     color: rgb(12, 12, 8);
+    background-color:#CA3CFF;
+}
+.playerText{
+    background-color:#CA3CFF;
+}
+.cpuText{
+    background-color:#CAFFD0;
 }
 
 #first{
@@ -130,6 +137,7 @@ p{
 
 .playerWeapons:hover{
     transform: scale(1.3);
+    filter: drop-shadow(10px 10px 5px #1E1014);
 }
 
 .playerImgAnimation{
@@ -144,11 +152,12 @@ p{
     }
     25%{
         transform: scale(1.5);
+        filter: drop-shadow(20px 20px 5px #CA3CFF);
 
     }
     75%{
         transform: scale(1.5);
-        
+        filter: drop-shadow(20px 20px 5px #CA3CFF);
         
     }
 }
@@ -162,12 +171,12 @@ p{
 @keyframes cpuSAnimation{
     25%{
         transform: scale(1.5);
-        
+        filter: drop-shadow(20px 20px 5px #CAFFD0);
         
     }
     75%{
         transform: scale(1.5);
-        
+        filter: drop-shadow(20px 20px 5px #CAFFD0);
     
     }
 }
